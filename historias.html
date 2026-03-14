@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historias, personas y sociedades: tu ventana al mundo. Proyecto educativo de ciencias sociales a cargo del profesor Ricardo José Hernández Sandoval.">
+    <title>Historias, personas y sociedades · Ciencias Sociales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajustes específicos para la página de sociales */
+        .hero-historia {
+            background: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), 
+                        url('https://images.unsplash.com/photo-1457369804613-52c61a1e7c9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+        }
+        .timeline-item .date {
+            font-size: 0.9rem;
+            color: var(--btn-bg);
+            font-weight: 500;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+        .badge-list span {
+            background: var(--btn-bg);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .btn-youtube {
+            background: #ff0000;
+            color: white;
+            border: none;
+        }
+        .btn-youtube:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fas fa-globe-americas"></i> Historias·Personas·Sociedades</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresa.html">ITSA Segurity</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="historias.html" aria-current="page">Ciencias Sociales</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button onclick="toggleDark()" class="btn" style="padding:8px 16px;"><i class="fas fa-moon"></i></button>
+            <a href="https://www.youtube.com/@ElProfeHernandez" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero hero-historia" id="inicio">
+        <div class="hero-box">
+            <span class="section-subtitle">· Ciencias Sociales ·</span>
+            <h1>Historias, personas y sociedades</h1>
+            <p style="font-size:1.3rem;">Tu ventana al mundo</p>
+            <p style="margin-top:1rem;">Exploramos el pasado, comprendemos el presente y construimos el futuro.</p>
+            <a href="https://www.youtube.com/@ElProfeHernandez" class="btn btn-large btn-youtube" target="_blank"><i class="fab fa-youtube"></i> Canal El Profe Hernandez</a>
+        </div>
+    </div>
+
+    <!-- SOBRE EL PROFESOR -->
+    <section id="about" class="reveal">
+        <span class="section-subtitle">· Docente con 28 años de experiencia ·</span>
+        <h2>Prof. Ricardo José Hernández Sandoval</h2>
+        <div class="profile">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ricardo Hernández" style="width:180px; height:180px; object-fit:cover; border-radius:50%; border:4px solid var(--btn-bg);">
+            <div>
+                <p><strong>Licenciado en Ciencias de la Educación con mención en Ciencias Sociales</strong> (UNAN-Managua). Con una trayectoria de 28 años en colegios públicos y privados, así como en educación superior (UPOLI). Apasionado por la enseñanza de la historia, la filosofía y la economía, y por la creación de materiales didácticos innovadores.</p>
+                <p>Ha participado como ponente en congresos nacionales e internacionales, y ha sido reconocido múltiples veces como docente destacado. Actualmente comparte su conocimiento a través de su canal de YouTube <strong>"El Profe Hernandez"</strong>.</p>
+                <div class="badge-list">
+                    <span>28 años de servicio</span>
+                    <span>Docente destacado UPOLI 2016-2020</span>
+                    <span>Coautor de textos básicos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAYECTORIA DOCENTE -->
+    <section id="trayectoria" class="reveal">
+        <span class="section-subtitle">· Instituciones ·</span>
+        <h2>Trayectoria profesional</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">2008 - 2023</span>
+                <h3>Docente de Educación Media · UPOLI (anteriormente UPOLI)</h3>
+                <p>Participación en diseño de textos básicos de Historia de Nicaragua y Filosofía. Elaboración de guías didácticas y materiales de apoyo. Colectivo de Ciencias Sociales.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2008 - 2012</span>
+                <h3>Docente · Colegio Bautista Libertad</h3>
+                <p>Creación de materiales de estudio: Cultura de Paz (6° a 11°), Historia de la Filosofía (10°), Desarrollo Sostenible (11°). Reconocimientos por labor docente.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date">2000 - 2008</span>
+                <h3>Docente · Colegio Cristiano El Sendero Divino</h3>
+                <p>Impartición de talleres de capacitación docente y elaboración de proyectos educativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TALLERES Y CURSOS IMPARTIDOS -->
+    <section id="talleres" class="reveal">
+        <span class="section-subtitle">· Formación continua ·</span>
+        <h2>Talleres y cursos impartidos</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <div class="card">
+                <i class="fas fa-chalkboard-teacher fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>El planeamiento didáctico desde el enfoque APA</h3>
+                <p>Colegio Bautista Libertad, 2008</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-search fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>El Proceso Investigativo como compromiso social</h3>
+                <p>Instituto José Antonio Hooker y Reyes, 2006-2007</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-leaf fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Mi compromiso con la protección del medio ambiente</h3>
+                <p>Colegio Bautista Libertad, 2008</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-vote-yea fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Gobiernos Estudiantiles y Democracia Participativa</h3>
+                <p>Colegio Bautista Libertad, 2008</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-clipboard-check fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>¿De qué informan los errores al docente y discente?</h3>
+                <p>Colegio Cristiano El Sendero Divino, 2005</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chess-board fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Estrategias de enseñanza-aprendizaje</h3>
+                <p>Colegio Cristiano El Sendero Divino, 2006</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECONOCIMIENTOS -->
+    <section id="reconocimientos" class="reveal">
+        <span class="section-subtitle">· Méritos ·</span>
+        <h2>Reconocimientos</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card">
+                <i class="fas fa-award fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Docente Destacado I Semestre</h3>
+                <p>UPOLI, Área de Ciencias Sociales (2016, 2019, 2020)</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-award fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Reconocimiento a la labor docente</h3>
+                <p>Colegio Bautista Libertad (2008, 2012)</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-award fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Participación en Brigadas de Alfabetización</h3>
+                <p>Campaña Nacional "Nicaragua libre de analfabetismo" (2012)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MATERIALES DIDÁCTICOS -->
+    <section id="materiales" class="reveal">
+        <span class="section-subtitle">· Publicaciones ·</span>
+        <h2>Materiales elaborados</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div class="card">
+                <i class="fas fa-book fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Historia de Nicaragua</h3>
+                <p>Coautor del texto básico. Colectivo de Ciencias Sociales, UPOLI (2021)</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-book fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Filosofía</h3>
+                <p>Proyecto de texto básico. Colectivo de Ciencias Sociales, UPOLI (2021)</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-alt fa-2x" style="color:var(--btn-bg);"></i>
+                <h3>Materiales de estudio</h3>
+                <p>Cultura de Paz, Historia de la Filosofía, Desarrollo Sostenible (Colegio Bautista Libertad, 2015)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUTUBE Y CONTACTO -->
+    <section id="contacto" class="reveal">
+        <span class="section-subtitle">· Conéctate ·</span>
+        <h2>Sígueme en YouTube</h2>
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+            <p>En el canal <strong>"El Profe Hernandez"</strong> encontrarás clases, análisis y recursos sobre historia, filosofía y ciencias sociales.</p>
+            <a href="https://www.youtube.com/@ElProfeHernandez" class="btn btn-large btn-youtube" target="_blank" style="margin: 1rem 0;"><i class="fab fa-youtube"></i> Visitar canal</a>
+            <p style="margin-top: 2rem;">¿Preguntas o sugerencias? Escríbeme:</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:docentebautista@gmail.com">docentebautista@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Historias, personas y sociedades · Prof. Ricardo Hernández</p>
+        <div class="social">
+            <a href="https://www.youtube.com/@ElProfeHernandez" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:docentebautista@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <button id="btnTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
