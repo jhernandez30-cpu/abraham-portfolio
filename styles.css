@@ -512,4 +512,9 @@ footer a:hover {
     .section-title {
         font-size: 2rem;
     }
+
+    .nav-menu a.active {
+    border-bottom-color: var(--accent);
+    color: var(--primary);
+}
 }
